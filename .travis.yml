@@ -3,7 +3,7 @@ services:
  - docker
 
 before_install:
- - docker build -t pipeline11/node2aws -f Dockerfile.dev .
+ - docker build -t pipeline11/nodetravis -f Dockerfile.dev .
   
 scripts:
- - docker run pipeline11/node2aws npm run test -- --coverage
+ - docker run pipeline11/nodetravis npm run test -- --coverage
